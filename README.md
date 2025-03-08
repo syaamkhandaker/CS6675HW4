@@ -16,9 +16,21 @@ I finished this assignment by creating 5 different HTML files with different ima
 ![mobile_ss4](https://github.com/user-attachments/assets/72aebbac-fa9b-4606-b987-6ba9c39fe847)
 ![mobile_ss5](https://github.com/user-attachments/assets/8e5198bf-efb5-4223-8763-143763a72974)
 
+## Testing
+
+I particularly used Grafana K6 as a testing method to figure out the metrics. This works using Javascript and creates makeshift users who try to access a certain website and retrieves metrics about the data and how long it takes.
+
+### Configuration
+
+For the non stress test version we go from 0 to 100 concurrent users in 10 seconds, stay at 100 concurrent users for 30 seconds, and then ramp down concurrent users to 0 in 10 seconds. For the stress test version we go from 0 to 100 concurrent users in 10 seconds, ramp up from 100 to 500 in 10 seconds, ramp up from 500 to 1000 in 10 seconds, stay at 1000 concurrent users for 30 seconds, and then ramp back down to 0 users in 10 seconds.
+
 ## Latency and Throughput without Web Caching
 
+## Stress Testing without Web Caching
+
 ## Latency and Throughput with Web Caching
+
+## Stress Testing with Web Caching
 
 ## Summary
 
