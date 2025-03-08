@@ -18,7 +18,11 @@ I finished this assignment by creating 5 different HTML files with different ima
 
 ## Latency and Throughput without Web Caching
 
+## Stress Testing without Web Caching
+
 ## Latency and Throughput with Web Caching
+
+## Stress Testing with Web Caching
 
 ## Summary
 
