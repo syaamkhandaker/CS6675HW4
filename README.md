@@ -18,7 +18,7 @@ I finished this assignment by creating 5 different HTML files with different ima
 
 ## Testing
 
-I particularly used Grafana K6 as a testing method to figure out the metrics. This works using Javascript and creates makeshift users who try to access a certain website and retrieves metrics about the data and how long it takes.
+I particularly used Grafana K6 as a testing method to figure out the metrics. This works using Javascript and creates makeshift users who try to access a certain website and retrieves metrics about the data and how long it takes. To run these tests, two npm commands were created: "npm run test-non-stress" and "npm run test-stress".
 
 ### Configuration
 
