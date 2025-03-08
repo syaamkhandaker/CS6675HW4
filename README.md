@@ -22,7 +22,7 @@ I particularly used Grafana K6 as a testing method to figure out the metrics. Th
 
 ### Configuration
 
-For the non stress test version we go from 0 to 100 concurrent users in 10 seconds, stay at 100 concurrent users for 30 seconds, and then ramp down concurrent users to 0 in 10 seconds. For the stress test version we go from 0 to 100 concurrent users in 10 seconds, ramp up from 100 to 500 in 10 seconds, ramp up from 500 to 1000 in 10 seconds, stay at 1000 concurrent users for 30 seconds, and then ramp back down to 0 users in 10 seconds.
+For the non stress test version we go from 0 to 100 concurrent users in 10 seconds, stay at 100 concurrent users for 30 seconds, and then ramp down concurrent users to 0 in 10 seconds. For the stress test version we go from 0 to 100 concurrent users in 10 seconds, ramp up from 100 to 500 in 10 seconds, ramp up from 500 to 1000 in 10 seconds, stay at 1000 concurrent users for 30 seconds, and then ramp back down to 0 users in 10 seconds. To learn more you can read through the testing files within the scripts folder.
 
 ## Latency and Throughput without Web Caching
 
@@ -37,11 +37,13 @@ From this image, we can deduce that average throughput is 781.55 RPS (http_reqs)
 From this image, we can deduce that average throughput is 1474.56 RPS (http_reqs) and average latency is 55.09ms (http_req_duration) across all 5 pages.
 
 ## Latency and Throughput with Web Caching
+
 ![NonStressCacheMetrics](https://github.com/user-attachments/assets/4ef22bef-2448-40b6-9579-729142d54c41)
 
 From this image, we can deduce that average throughput is 783.61 RPS (http_reqs) and average latency is 1.52ms (http_req_duration) across all 5 pages.
 
 ## Stress Testing with Web Caching
+
 ![StressCacheMetrics](https://github.com/user-attachments/assets/8142deec-9f1a-4d40-a603-c2184a6ed9eb)
 
 From this image, we can deduce that average throughput is 1490.54 RPS (http_reqs) and average latency is 55.04ms (http_req_duration) across all 5 pages.
