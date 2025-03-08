@@ -50,6 +50,8 @@ From this image, we can deduce that average throughput is 1490.54 RPS (http_reqs
 
 ## Summary
 
+Overall, I notice very slight benefits to using cache vs non-cached. This is likely since the pages only use two images, which isn't extremely bad to load in a non-cached/cached environemnt, making it seem somewhat close. If you compare the relative values between both caching and non-caching, you end up finidng there is roughly a 1% increase in performance between cache vs non-cache.
+
 ## What I learned
 
 - I learned a lot about how web servers work in terms of their configuration. A lot of frameworks I use abstract out this process, leaving with the final product. By going through this project, I got a chance to see how web servers work, what types of configurations you can make within a web server and how serving content actually works from static content.
