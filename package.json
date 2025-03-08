@@ -1,0 +1,13 @@
+{
+  "name": "cs6675hw4",
+  "version": "1.0.0",
+  "description": "I chose to do the second problem for the coding assignment, attempting to create a web server and finding metrics for it.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "if ! command -v k6 > /dev/null; then echo 'k6 is not installed. Please install it using: brew install k6'; exit 1; fi",
+    "test-stress": "k6 run scripts/testPagesStress.js",
+    "test-non-stress": "k6 run scripts/testPagesNonStress.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
