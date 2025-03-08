@@ -23,3 +23,7 @@ I finished this assignment by creating 5 different HTML files with different ima
 ## Summary
 
 ## What I learned
+
+- I learned a lot about how web servers work in terms of their configuration. A lot of frameworks I use abstract out this process, leaving with the final product. By going through this project, I got a chance to see how web servers work, what types of configurations you can make within a web server and how serving content actually works from static content.
+- Another cool lesson that was learned was with caching. I understand that caching is beneficial, especially for larger scale applications because of how long requests take. However, I've never really gotten the chance to expirment with it much. This project was probably my first time messing around with caches and trying to see the actual significance of it.
+- I also learned a lot about how nginx works. I've attempted using it beforehand, but never really got it to fully work. However, this time around, I got a chance to get it fully working and understand a lot more about the inner worksing of it. This was extremely beneficial since nginx is a very popular web server option for a lot of cloud platforms and is potentially something I could implement in my future-work.
